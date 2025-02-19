@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Recommendations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Book Recommendations</h1>
+    <nav>
+      <ul>
+        <li><a href="#fiction">Fiction</a></li>
+        <li><a href="#non-fiction">Non-Fiction</a></li>
+        <li><a href="#self-help">Self-Help</a></li>
+        <li><a href="#submit">Submit a Book</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="fiction">
+    <h2>Fiction</h2>
+    <ul id="fiction-books"></ul>
+  </section>
+
+  <section id="non-fiction">
+    <h2>Non-Fiction</h2>
+    <ul id="non-fiction-books"></ul>
+  </section>
+
+  <section id="self-help">
+    <h2>Self-Help</h2>
+    <ul id="self-help-books"></ul>
+  </section>
+
+  <section id="submit">
+    <h2>Submit a Book</h2>
+    <form id="book-form">
+      <label for="title">Book Title:</label>
+      <input type="text" id="title" name="title" required>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required>
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="fiction">Fiction</option>
+        <option value="non-fiction">Non-Fiction</option>
+        <option value="self-help">Self-Help</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
